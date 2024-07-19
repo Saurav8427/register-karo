@@ -1,0 +1,96 @@
+/* components/Contact.module.css */
+
+.contactContainer {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .headerContainer {
+    margin-bottom: 40px;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .subheader {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .enquireButton {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .enquireButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .infoContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .infoItem {
+    background-color: #f5f5f5;
+    color: #000;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    text-align: left;
+  }
+  
+  .icon {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+ 
+  
+  .footer {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      font-size: 28px;
+    }
+  
+    .subheader {
+      font-size: 16px;
+    }
+  
+    .infoItem {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px auto;
+    }
+  }
+  

@@ -1,0 +1,85 @@
+/* components/VirtualOfficeBenefits.module.css */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 80px;
+    margin: 45px;
+    border-radius: 15px;
+  }
+  
+  .textSection {
+    flex: 1;
+    /* margin-right: 2rem; */
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+  
+  .benefitsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .benefit {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 1rem);
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #3e68ff;
+    margin-bottom: 1rem;
+  }
+  
+  .benefitTitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .benefitDescription {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
+  .imageSection {
+    margin-top: 170px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    max-width: 100%;
+    border-radius: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .benefit {
+      width: 100%;
+    }
+    .container {
+        margin: 25px;
+    }
+    .imageSection {
+      display: none;
+    }
+  }

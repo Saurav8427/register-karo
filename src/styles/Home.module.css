@@ -1,0 +1,38 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/office-background.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.textSection {
+  max-width: 50%;
+}
+
+.textSection h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.textSection p {
+  font-size: 1rem;
+}

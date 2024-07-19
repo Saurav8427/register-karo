@@ -1,0 +1,64 @@
+/* styles/Navbar.module.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+  }
+  
+  .logoContainer {
+    flex-shrink: 0;
+  }
+  
+  .logo {
+    max-height: 75px;
+    cursor: pointer;
+  }
+  
+  .navLinks {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin: 0 15px;
+  }
+  
+  .navItem a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+  }
+  
+  .enquireButtonContainer {
+    flex-shrink: 0;
+  }
+  
+  .enquireButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .enquireButton:hover {
+    background-color: #005bb5;
+  }
+  
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+    }
+  }
+  

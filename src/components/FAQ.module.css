@@ -1,0 +1,49 @@
+/* components/FAQ.module.css */
+
+.faqContainer {
+  max-width: 800px;
+  margin: auto auto 50px auto;
+  padding: 20px;
+}
+
+.header {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faqItem {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.answer {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .faqContainer {
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+
+  .answer {
+    font-size: 14px;
+  }
+}
