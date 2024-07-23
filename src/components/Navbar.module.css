@@ -1,64 +1,96 @@
-/* styles/Navbar.module.css */
-
-.navbar {
+   .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 20px;
-    background-color: white;
+    background-color: #ffffff;
+    position: relative;
   }
   
-  .logoContainer {
-    flex-shrink: 0;
+  .logo img {
+    height: 75px;
   }
   
-  .logo {
-    max-height: 75px;
-    cursor: pointer;
-  }
-  
-  .navLinks {
+  .links {
+    /* margin-top:10px; */
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 20px;
   }
   
-  .navItem {
-    margin: 0 15px;
-  }
-  
-  .navItem a {
+  .links a {
     text-decoration: none;
-    color: #000;
-    font-size: 1rem;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
   }
   
-  .enquireButtonContainer {
-    flex-shrink: 0;
+  .links a:hover {
+    color: #0070f3;
   }
   
-  .enquireButton {
+  .enquireNow button {
     background-color: #0070f3;
     color: white;
-    border: none;
-    border-radius: 4px;
     padding: 10px 20px;
-    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
-  .enquireButton:hover {
+  .enquireNow button:hover {
     background-color: #005bb5;
   }
   
-  @media (max-width: 768px) {
-    .navLinks {
+  .burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 767px) {
+    .links {
+      margin-top:10px;
       display: none;
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      border: 1px solid #eaeaea;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      transform-origin: top right;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      gap: 0px;
     }
   
-    .navbar {
-      justify-content: space-between;
+    .links.open {
+      display: flex;
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    .links a {
+      padding: 10px 20px;
+      border-bottom: 1px solid #eaeaea;
+      font-size: 15px;
+      transition: background-color 0.3s ease;
+    }
+  
+    .links a:last-child {
+      border-bottom: none;
+    }
+  
+    .links a:hover {
+      background-color: #f1f1f1;
     }
   }
+  
+  
   

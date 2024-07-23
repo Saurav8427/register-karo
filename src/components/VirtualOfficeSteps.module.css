@@ -54,7 +54,7 @@
     float: right;
     height: 75px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .step {
         width: 100%;
     }

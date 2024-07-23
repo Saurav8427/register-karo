@@ -72,13 +72,18 @@
     border-radius: 1rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .benefit {
       width: 100%;
     }
     .container {
         margin: 25px;
     }
+    .imageSection {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1023px) {
     .imageSection {
       display: none;
     }

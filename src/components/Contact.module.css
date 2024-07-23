@@ -78,7 +78,7 @@
     font-size: 14px;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .header {
       font-size: 28px;
     }
